@@ -1,0 +1,31 @@
+.card {
+  -webkit-box-shadow: 1px 1px 5px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 5px -3px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 5px -3px rgba(0,0,0,0.75);
+  width: 50%;
+
+  @media only screen and (min-width: 768px) {
+    width: 30%;
+  }
+
+  &__header {
+    padding: 20px;
+  }
+
+  &__footer {
+    background-color: dodgerblue;
+    color: white;
+    padding: 20px;
+  }
+
+  &__body {
+    padding: 20px;
+  }
+
+  &__image {
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
