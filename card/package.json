@@ -2,6 +2,8 @@
   "name": "@maggieserino/card",
   "version": "1.0.0",
   "description": "",
+  "main": "./dist/bundle.js",
+  "style": "./dist/bundle.css",
   "scripts": {
     "build": "webpack --config webpack.config.js"
   },
