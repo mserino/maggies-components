@@ -1,9 +1,20 @@
-# Card Component
+# Maggie's Card Component
 
-### Installation
+## Installation
 `npm install --save @maggieserino/card`
+or  
+Clone this repo and import `bundle.css` from the `/dist` directory.
 
-### Usage
+## Import
+The styles can be imported in an existing codebase as standalone or using PostCSS:  
+
+#### PostCSS Imports
+`@import '@maggieserino/card'`  
+
+#### Standalone Imports
+`<link rel="stylesheet" href="./dist/bundle.css">`  
+
+## Usage
 ```
 <div class="card">
   <!-- Header -->
