@@ -94,18 +94,18 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.scss */ \"./src/styles.scss\");\n/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n\nconsole.log('Webpack Boilerplate');\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/styles.scss */ \"./src/styles/styles.scss\");\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n\nconsole.log('Maggies Card Component');\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/styles.scss":
-/*!*************************!*\
-  !*** ./src/styles.scss ***!
-  \*************************/
+/***/ "./src/styles/styles.scss":
+/*!********************************!*\
+  !*** ./src/styles/styles.scss ***!
+  \********************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/styles.scss?");
+eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleBuildError: Module build failed (from ./node_modules/postcss-loader/src/index.js):\\nError: No PostCSS Config found in: /Users/margheritaserino/sandbox/maggies-components/card/src/styles\\n    at config.search.then (/Users/margheritaserino/sandbox/maggies-components/card/node_modules/postcss-load-config/src/index.js:91:15)\\n    at runLoaders (/Users/margheritaserino/sandbox/maggies-components/card/node_modules/webpack/lib/NormalModule.js:313:20)\\n    at /Users/margheritaserino/sandbox/maggies-components/card/node_modules/loader-runner/lib/LoaderRunner.js:367:11\\n    at /Users/margheritaserino/sandbox/maggies-components/card/node_modules/loader-runner/lib/LoaderRunner.js:233:18\\n    at context.callback (/Users/margheritaserino/sandbox/maggies-components/card/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\\n    at Promise.resolve.then.then.catch (/Users/margheritaserino/sandbox/maggies-components/card/node_modules/postcss-loader/src/index.js:208:9)\");\n\n//# sourceURL=webpack:///./src/styles/styles.scss?");
 
 /***/ })
 

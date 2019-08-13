@@ -1,3 +1,3 @@
-import './styles.scss';
+import './styles/styles.scss';
 
-console.log('Webpack Boilerplate');
+console.log('Maggies Card Component');

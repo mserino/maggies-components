@@ -1,6 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const component = 'card';
+const component = 'pagination';
 
 module.exports = {
     entry: './src/index.js',

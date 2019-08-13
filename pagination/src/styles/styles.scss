@@ -1,0 +1,28 @@
+.maggies-pagination {
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: white;
+    margin-right: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background-color .2s ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: white;
+      color: orange;
+      text-decoration: none;
+      transition: background-color .2s ease-in-out;
+    }
+  }
+}

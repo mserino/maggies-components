@@ -1,7 +1,7 @@
 {
   "name": "@maggieserino/card",
-  "version": "1.1.0",
-  "description": "",
+  "version": "1.1.1",
+  "description": "Card component",
   "main": "./dist/bundle.js",
   "style": "./dist/bundle.css",
   "scripts": {
