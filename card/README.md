@@ -3,7 +3,7 @@
 ## Installation
 `npm install --save @maggieserino/card`
 or  
-Clone this repo and import `bundle.css` from the `/dist` directory.
+Clone this repo and import `card.css` from the `/dist` directory.
 
 ## Import
 The styles can be imported in an existing codebase as standalone or using PostCSS:  
@@ -12,26 +12,26 @@ The styles can be imported in an existing codebase as standalone or using PostCS
 `@import '@maggieserino/card'`  
 
 #### Standalone Imports
-`<link rel="stylesheet" href="./dist/bundle.css">`  
+`<link rel="stylesheet" href="./dist/card.css">`  
 
 ## Usage
 ```
 <div class="card">
   <!-- Header -->
-  <div class="card__header">
+  <div class="maggies-card__header">
     Header
   </div>
   <!-- Image -->
-  <div class="card__image">
+  <div class="maggies-card__image">
     <img src="https://placeimg.com/640/480/nature">
   </div>
   <!-- Body -->
-  <div class="card__body">
+  <div class="maggies-card__body">
     <h2>This is the Card title</h2>
     <p>This is the card body</p>
   </div>
   <!-- Footer -->
-  <div class="card__footer">
+  <div class="maggies-card__footer">
     Footer
   </div>
 </div>
