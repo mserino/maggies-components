@@ -24,3 +24,17 @@
   object-fit: cover;
   width: 100%;
 }
+.maggies-card__image img.-hidden {
+  display: none;
+}
+.maggies-card__image img.-visible {
+  display: block;
+}
+.maggies-card__controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.maggies-card__controls span {
+  cursor: pointer;
+}

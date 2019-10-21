@@ -5,7 +5,8 @@
   "main": "./dist/bundle.js",
   "style": "./dist/bundle.css",
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch"
   },
   "author": "",
   "license": "ISC",

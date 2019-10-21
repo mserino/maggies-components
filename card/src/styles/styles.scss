@@ -26,6 +26,24 @@
     img {
       object-fit: cover;
       width: 100%;
+
+      &.-hidden {
+        display: none;
+      }
+
+      &.-visible {
+        display: block;
+      }
+    }
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    span {
+      cursor: pointer;
     }
   }
 }
