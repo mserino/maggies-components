@@ -1,0 +1,36 @@
+.tns-controls {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+
+  button {
+    -webkit-appearance: none;
+    background-color: rgba(0,0,0,.4);
+    border: 0;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  button[data-controls="prev"] {
+    left: 0;
+
+    &:after {
+      content: "<";
+      color: #FFF;
+    }
+  }
+
+  button[data-controls="next"] {
+    right: 0;
+
+    &:after {
+      content: ">";
+      color: #FFF;
+    }
+  }
+}

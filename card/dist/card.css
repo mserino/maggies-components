@@ -1,3 +1,35 @@
+.tns-controls {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+.tns-controls button {
+  -webkit-appearance: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0;
+  color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.tns-controls button[data-controls=prev] {
+  left: 0;
+}
+.tns-controls button[data-controls=prev]:after {
+  content: "<";
+  color: #FFF;
+}
+.tns-controls button[data-controls=next] {
+  right: 0;
+}
+.tns-controls button[data-controls=next]:after {
+  content: ">";
+  color: #FFF;
+}
+
 .maggies-card {
   -webkit-box-shadow: 1px 1px 5px -3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 1px 5px -3px rgba(0, 0, 0, 0.75);
@@ -37,4 +69,9 @@
 }
 .maggies-card__controls span {
   cursor: pointer;
+}
+.maggies-card__slideshow-container {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }

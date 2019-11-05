@@ -1,5 +1,7 @@
 'use strict';
 
+import { tns } from "../../node_modules/tiny-slider/src/tiny-slider";
+
 /**
  * @module Card
  * @description
@@ -39,9 +41,11 @@ export default class Card {
     // Settings
 		this.settings = Object.assign( {}, defaults, options );
 
-		this.$cards.forEach( ( cardArea, index ) => {
-			this.setupCard( cardArea, index );
-    } );
+		// this.$cards.forEach( ( cardArea, index ) => {
+		// 	this.setupCard( cardArea, index );
+    // } );
+
+    this.setupSlideshow();
     
     /**
 		 * Called after the accordion is initialized on page load.
@@ -52,49 +56,60 @@ export default class Card {
 		}
   }
 
-  setupCard( card ) {
-    const images = card.querySelectorAll( 'img' );
-    const controls = card.querySelectorAll( '.slideshow-control' );
-
-    if (images.length > 1) {
-      this.setupSlideShow( images );
-    }
-
-    controls.forEach( ( control ) => {
-      control.addEventListener( 'click', ( event ) => {
-        const target = event.target.dataset.target;
-        if ( target === 'next' ) {
-          this.showNextSlide( images );
-        } else {
-          this.showPreviousSlide( images );
-        }
-      } );
-    } );
+  setupSlideshow() {
+    var slider = tns({
+      container: '.maggies-card__slideshow',
+      items: 1,
+      slideBy: 'page',
+      autoplay: false,
+      navPosition: 'bottom'
+    });
   }
 
-  setupSlideShow( images ) {
-    this.currentIndex = 0;
-    this.showCurrentIndex( images );
-  }
+  // setupCard( card ) {
+    
+    // const images = card.querySelectorAll( 'img' );
+    // const controls = card.querySelectorAll( '.slideshow-control' );
 
-  showNextSlide( images ) {
-    this.currentIndex += 1;
+    // if (images.length > 1) {
+    //   this.setupSlideShow( images );
+    // }
 
-    this.showCurrentIndex( images );
-  }
+    // controls.forEach( ( control ) => {
+    //   control.addEventListener( 'click', ( event ) => {
+    //     const target = event.target.dataset.target;
+    //     if ( target === 'next' ) {
+    //       this.showNextSlide( images );
+    //     } else {
+    //       this.showPreviousSlide( images );
+    //     }
+    //   } );
+    // } );
+  // }
 
-  showPreviousSlide( images ) {
-    this.currentIndex -= 1;
+  // setupSlideShow( images ) {
+  //   this.currentIndex = 0;
+  //   this.showCurrentIndex( images );
+  // }
 
-    this.showCurrentIndex( images );
-  }
+  // showNextSlide( images ) {
+  //   this.currentIndex += 1;
 
-  showCurrentIndex( images ) {
-    images.forEach( (image ) => {
-      image.classList.remove( '-visible' );
-      image.classList.add( '-hidden' );
-    } );
+  //   this.showCurrentIndex( images );
+  // }
 
-    images[this.currentIndex].classList.add('-visible');
-  }
+  // showPreviousSlide( images ) {
+  //   this.currentIndex -= 1;
+
+  //   this.showCurrentIndex( images );
+  // }
+
+  // showCurrentIndex( images ) {
+  //   images.forEach( (image ) => {
+  //     image.classList.remove( '-visible' );
+  //     image.classList.add( '-hidden' );
+  //   } );
+
+  //   images[this.currentIndex].classList.add('-visible');
+  // }
 }
